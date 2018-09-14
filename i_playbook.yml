@@ -38,7 +38,7 @@ hosts: localhost
  command: sudo apt-get update 
 
  — name: Download Dockerfile
- command: wget https://s3.amazonaws.com/packeramidemo/Dockerfile 
+ command: wget https://raw.githubusercontent.com/leoncaiau912/packer/master/Dockerfile
 
  — name: Docker build image
  command: sudo docker build -t “simple_worx:dockerfile” .
