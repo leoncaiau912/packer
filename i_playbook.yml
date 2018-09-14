@@ -29,7 +29,7 @@
     - "deb https://apt.dockerproject.org/repo ubuntu-trusty main"
   - name: apt update
     apt: update_cache=yes
-  - apt: name=docker-engine state=present
+    apt: name=docker-engine state=present
   - name: add user mod
     command: sudo usermod -aG docker {{remote_user}}
   - name: add user mod
