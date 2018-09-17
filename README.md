@@ -8,4 +8,5 @@
 	 packer build bastion.json
 
 
-
+#packer build image with ansible and docker
+packer build template.json
