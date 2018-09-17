@@ -41,7 +41,7 @@
     ignore_errors: yes
 
   - name: Docker run even after restart
-    command: sudo docker run -dit — restart unless-stopped -p 80:80 simple_worx:dockerfile
+    command: sudo docker run -dit --restart=unless-stopped -p 80:80 simple_worx:dockerfile
     ignore_errors: yes
 
   - name: Docker running?
