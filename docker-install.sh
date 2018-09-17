@@ -14,7 +14,7 @@ sudo apt-get install -y docker-engine
 sudo apt-get install -y python-pip
 sudo service docker start
 sudo systemctl enable docker
-sudo groupadd docker
+#sudo groupadd docker
 sudo usermod -aG docker $(whoami)
 
 echo "Docker engine installed"
