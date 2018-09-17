@@ -6,6 +6,13 @@ set -e
  sudo apt-get -y upgrade
  sudo apt-get install -y python python-pip
  sudo pip install ansible
+#issue fix
+#https://github.com/pypa/pip/issues/5447
+#https://github.com/ansible/ansible/issues/26670
+ sudo hash -d pip
+ sudo rm -rf /usr/lib/python2.7/dist-packages/OpenSSL/
+ sudo pip install -U pyOpenSSL
+
  sudo timedatectl set-timezone Europe/Istanbul
  sudo localectl set-locale LANG=en_US.utf8
  sudo wget 'https://raw.githubusercontent.com/leoncaiau912/packer/master/docker-install.sh'
