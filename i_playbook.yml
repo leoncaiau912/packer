@@ -37,7 +37,7 @@
     command: wget https://raw.githubusercontent.com/leoncaiau912/packer/master/Dockerfile
 
   - name: Docker build image
-    command: sudo docker build -t “simple_worx:dockerfile” .
+    command: sudo docker build -t "simple_worx:dockerfile" .
     ignore_errors: yes
 
   - name: Docker run even after restart

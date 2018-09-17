@@ -9,7 +9,7 @@ set -e
 #issue fix
 #https://github.com/pypa/pip/issues/5447
 #https://github.com/ansible/ansible/issues/26670
- sudo hash -d pip
+# sudo hash -d pip
  sudo rm -rf /usr/lib/python2.7/dist-packages/OpenSSL/
  sudo pip install -U pyOpenSSL
 
