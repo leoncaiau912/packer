@@ -1,0 +1,25 @@
+{
+"variables": {
+    "aws_access_key": "youraccesskey",
+    "aws_secret_key": "yoursecretkey",
+    "aws_region": "ap-southeast-2"
+    },
+"provisioners": [
+    {
+    "type": "shell",
+    "script": "provision.sh"
+    }
+    ],
+
+    "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "{{user `aws_region` }}",
+    "source_ami": "ami-059b78064586da1b7",
+    "instance_type": "t2.micro",
+    "ssh_username": "ubuntu",
+    "ami_name": "packer-bastion {{timestamp | clean_ami_name}}"
+    }]
+}
+
