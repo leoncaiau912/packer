@@ -7,7 +7,10 @@
 "provisioners": [
     {
     "type": "shell",
-    "script": "provision.sh"
+    "scripts": [ 
+	    "provision.sh",
+            "/home/freestyle/leon/freestyle/devops/docker/builders/docker-machine/ubuntu_install.sh"
+     ]
     }
     ],
 
