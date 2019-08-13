@@ -4,7 +4,7 @@ set -e
  sudo apt-get update
  echo "apt-get update done."
  sudo apt-get -y upgrade
- sudo apt-get install -y python python-pip
+ sudo apt-get install  python python-pip -y
  sudo pip install ansible
 #issue fix
 #https://github.com/pypa/pip/issues/5447
