@@ -15,10 +15,10 @@ set -e
 
  sudo timedatectl set-timezone Europe/Istanbul
  sudo localectl set-locale LANG=en_US.utf8
- sudo wget 'https://raw.githubusercontent.com/leoncaiau912/packer/master/docker-install.sh'
+ sudo wget 'https://raw.githubusercontent.com/leoncaiau912/packer/ubuntu18-04/docker-install.sh'
  echo "Running docker installation."
  sudo bash docker-install.sh
  
- sudo wget 'https://raw.githubusercontent.com/leoncaiau912/packer/master/i_playbook.yml'
+ sudo wget 'https://raw.githubusercontent.com/leoncaiau912/packer/ubuntu18-04/i_playbook.yml'
  echo "Running build."
  sudo ansible-playbook i_playbook.yml
