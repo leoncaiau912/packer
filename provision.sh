@@ -4,7 +4,7 @@ set -e
  sudo apt-get update
  echo "apt-get update done."
  sudo apt-get -y upgrade
- sleep 10
+ sleep 30
  echo "python installing"
  sudo apt-get install -y python 
  sleep 10
